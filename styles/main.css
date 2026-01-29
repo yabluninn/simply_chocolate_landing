@@ -17,6 +17,7 @@ html {
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
   position: relative;
   z-index: 1;
 }
