@@ -8,6 +8,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --main-color: #fd9222;
+}
+
 html {
   font-family: "Montserrat", sans-serif;
+}
+
+body {
+  position: relative;
+  z-index: 1;
 }
