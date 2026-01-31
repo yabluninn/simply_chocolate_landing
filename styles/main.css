@@ -12,6 +12,10 @@
   --main-color: #fd9222;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Montserrat", sans-serif;
 }

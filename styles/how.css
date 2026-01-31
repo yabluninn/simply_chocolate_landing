@@ -1,0 +1,79 @@
+.how {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 32px;
+}
+
+.how-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -3%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.how-title span {
+  color: #fd9222;
+}
+
+.how-main-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.how-preview-image {
+  flex: 1;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(30, 24, 35, 0.4),
+      rgba(30, 24, 35, 0.4)
+    ),
+    url(../images/how.jpg);
+  border-radius: 30px;
+}
+
+.how-meta {
+  flex: 0.5;
+  height: 400px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 32px;
+}
+
+.how-subtitle {
+  width: 350px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #111111;
+}
+
+.preparation-steps {
+  width: 525px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 16px;
+}
+
+.preparation-step {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -2%;
+  color: #111111;
+}
