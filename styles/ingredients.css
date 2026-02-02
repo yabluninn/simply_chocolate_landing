@@ -1,0 +1,126 @@
+.ingredients {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 100px;
+  padding: 0 32px;
+}
+
+.ingredients-meta {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.ingredients-title {
+  width: 411px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.ingredients-title span {
+  color: var(--main-color);
+}
+
+.ingredients-subtitle {
+  width: 486px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -2%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.ingredients-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+}
+
+.ingredient-card {
+  position: relative;
+  border-radius: 15px;
+  aspect-ratio: 1 / 1;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 36px;
+  padding: 28px 32px;
+}
+
+.ingredient-card:nth-child(1) {
+  background-color: var(--main-color);
+}
+
+.ingredient-card:nth-child(2),
+.ingredient-card:nth-child(4) {
+  background-color: white;
+  border-color: var(--main-color);
+}
+
+.ingredient-card:nth-child(3) {
+  background-color: #1e1823;
+}
+
+.ingredient-card-preview {
+  width: 206px;
+  height: 160px;
+  object-fit: contain;
+}
+
+.ingredient-card-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -2%;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: start;
+}
+
+.ingredient-card:nth-child(1) .ingredient-card-title,
+.ingredient-card:nth-child(3) .ingredient-card-title {
+  color: white;
+}
+
+.ingredient-overlay {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid white;
+}
+
+.ing-overlay-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -3%;
+  text-transform: uppercase;
+}
+
+.ing-overlay-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -2%;
+}
