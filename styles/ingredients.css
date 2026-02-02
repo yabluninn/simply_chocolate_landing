@@ -63,10 +63,12 @@
   flex-direction: column;
   gap: 36px;
   padding: 28px 32px;
+  overflow: hidden;
 }
 
 .ingredient-card:nth-child(1) {
   background-color: var(--main-color);
+  border-color: transparent;
 }
 
 .ingredient-card:nth-child(2),
@@ -77,6 +79,7 @@
 
 .ingredient-card:nth-child(3) {
   background-color: #1e1823;
+  border-color: transparent;
 }
 
 .ingredient-card-preview {
@@ -102,12 +105,24 @@
 
 .ingredient-overlay {
   position: absolute;
+  inset: 0;
   width: 300px;
   height: 300px;
   background-color: white;
   padding: 20px;
   border-radius: 15px;
-  border: 1px solid white;
+
+  transform: translateY(100%);
+  opacity: 0;
+
+  pointer-events: none;
+
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.ingredient-card:hover .ingredient-overlay {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .ing-overlay-title {
