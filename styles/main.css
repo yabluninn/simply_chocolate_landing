@@ -32,7 +32,8 @@ body {
 button,
 a,
 p,
-span {
+span,
+input {
   font-family: "Montserrat", sans-serif;
 }
 

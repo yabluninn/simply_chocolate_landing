@@ -55,9 +55,6 @@
   line-height: 16px;
   letter-spacing: -2%;
   vertical-align: middle;
-}
-
-.menu-item a {
   color: #111111;
   text-decoration: none;
   transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
