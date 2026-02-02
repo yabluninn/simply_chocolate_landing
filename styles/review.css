@@ -1,0 +1,98 @@
+.reviews {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 100px;
+  padding: 0 32px;
+}
+
+.reviews-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -3%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reviews-title span {
+  color: var(--main-color);
+}
+
+.reviews-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-item {
+  position: relative;
+  width: 424px;
+  height: 200px;
+  border: 1px solid #1111111a;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.review-meta {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: -28px;
+  gap: 18px;
+}
+
+.review-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0;
+}
+
+.review-avatar-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.review-content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -2%;
+  text-align: center;
+  color: #111111b2;
+  margin-top: 24px;
+}
+
+.leave-review-button {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding: 14px 40px;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
+    color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-radius: 100px;
+}
+
+.leave-review-button:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: white;
+}
