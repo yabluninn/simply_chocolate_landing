@@ -3,14 +3,16 @@
   margin-top: 72px;
   width: 100%;
   background-color: #1e1823;
-  padding: 50px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 70px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .benefit-item {
+  width: 100%;
   height: 244px;
   display: flex;
   justify-content: space-between;
@@ -60,7 +62,31 @@
 }
 
 .benefit-line {
+  display: none;
   width: 0px;
   height: 124px;
   border: 1px solid #ffffff80;
+}
+
+@media (min-width: 768px) {
+  .benefits {
+    padding: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .benefit-item {
+    width: fit-content;
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefits {
+    flex-wrap: nowrap;
+    gap: 70px;
+  }
+
+  .benefit-line {
+    display: block;
+  }
 }
