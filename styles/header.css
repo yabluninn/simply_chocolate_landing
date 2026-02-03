@@ -35,7 +35,7 @@
 }
 
 .menu {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   gap: 90px;
@@ -110,4 +110,34 @@
 
 .mobile-burger-button:hover i {
   color: var(--main-color);
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    gap: 0px;
+  }
+
+  .menu-tabs {
+    gap: 12px;
+  }
+
+  .mobile-burger-button {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    display: flex;
+    gap: 90px;
+  }
+
+  .menu-tabs {
+    gap: 24px;
+  }
+
+  .mobile-burger-button {
+    display: none;
+  }
 }
