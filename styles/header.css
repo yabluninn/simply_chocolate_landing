@@ -87,3 +87,27 @@
 .social-item:hover a {
   color: var(--main-color);
 }
+
+.mobile-burger-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  border: 0;
+}
+
+.mobile-burger-button i {
+  font-size: 28px;
+  color: #111111;
+  transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.mobile-burger-button:hover {
+  cursor: pointer;
+}
+
+.mobile-burger-button:hover i {
+  color: var(--main-color);
+}
