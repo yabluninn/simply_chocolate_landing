@@ -13,7 +13,6 @@
 
 .benefit-item {
   width: 100%;
-  height: 244px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +21,6 @@
 
 .benefit-item-meta {
   width: 308px;
-  height: 244px;
 }
 
 .benefit-item-icon {
@@ -77,6 +75,11 @@
 
   .benefit-item {
     width: fit-content;
+    height: 244px;
+  }
+
+  .benefit-item-meta {
+    height: 244px;
   }
 }
 

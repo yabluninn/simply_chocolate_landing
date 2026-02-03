@@ -4,9 +4,9 @@
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 32px;
   margin-top: 100px;
-  padding: 0 32px;
+  padding: 0 20px;
 }
 
 .ingredients-meta {
@@ -18,7 +18,7 @@
 }
 
 .ingredients-title {
-  width: 411px;
+  width: 100%;
 }
 
 .ingredients-title span {
@@ -26,7 +26,7 @@
 }
 
 .ingredients-subtitle {
-  width: 486px;
+  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -38,7 +38,7 @@
 
 .ingredients-cards {
   display: grid;
-  grid-template-columns: repeat(4, 300px);
+  grid-template-columns: 1fr;
   gap: 24px;
   justify-content: center;
   width: 100%;
@@ -106,7 +106,6 @@
 
   transform: translateY(100%);
   opacity: 0;
-
   pointer-events: none;
 
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -130,4 +129,29 @@
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -2%;
+}
+
+@media (min-width: 768px) {
+  .ingredients {
+    gap: 50px;
+    padding: 0 32px;
+  }
+
+  .ingredients-title {
+    width: 411px;
+  }
+
+  .ingredients-subtitle {
+    width: 486px;
+  }
+
+  .ingredients-cards {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .ingredients-cards {
+    grid-template-columns: repeat(4, 300px);
+  }
 }
