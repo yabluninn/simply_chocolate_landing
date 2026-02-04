@@ -1,0 +1,169 @@
+.modal-container {
+  position: relative;
+  width: fit-content;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  padding: 40px;
+  gap: 40px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+}
+
+.modal-close-button i {
+  color: #111111;
+  font-size: 22px;
+  transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.modal-close-button:hover {
+  cursor: pointer;
+}
+
+.modal-close-button:hover i {
+  color: var(--main-color);
+}
+
+.modal-title {
+  width: 350px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -3%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.modal-title span {
+  color: var(--main-color);
+}
+
+.modal-inputs {
+  width: 357px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.modal-input-container {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-input-title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+  color: #4040404d;
+}
+
+.modal-input-wrapper {
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: 13px;
+  border: 1px solid #1111110d;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  transition: border-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.modal-input-wrapper i {
+  font-size: 20px;
+  color: #111111;
+  transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.modal-input {
+  flex: 1;
+  outline: none;
+  border: 0;
+  font-size: 18px;
+}
+
+.modal-input-wrapper:focus-within {
+  border-color: var(--main-color);
+}
+
+.modal-input-wrapper:focus-within i {
+  color: var(--main-color);
+}
+
+.modal-text-area {
+  flex: 1;
+  outline: none;
+  border: 0;
+  min-height: 60px;
+  resize: none;
+  font-size: 16px;
+}
+
+.modal-text-area::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+  color: #4040404d;
+}
+
+.modal-checkbox-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+  color: #111111;
+  flex-wrap: wrap;
+}
+
+.modal-checkbox-label span {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.modal-checkbox {
+  flex-shrink: 0;
+  accent-color: var(--main-color);
+  margin: 0;
+}
+
+.modal-action-button {
+  padding: 18px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border: 0;
+  border-radius: 100px;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.modal-action-button:hover {
+  cursor: pointer;
+}

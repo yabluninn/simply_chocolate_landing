@@ -315,7 +315,9 @@
         <button class="modal-close-button">
           <i class="fa-solid fa-xmark"></i>
         </button>
-        <p>LEAVE A REVIEW ABOUT OUR CHOCOLATE</p>
+        <p class="modal-title">
+          LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
+        </p>
         <div class="modal-inputs">
           <div class="modal-input-container">
             <p class="modal-input-title">Name</p>
@@ -341,8 +343,11 @@
           <div class="modal-input-container">
             <p class="modal-input-title">Comment</p>
             <div class="modal-input-wrapper">
-              <i class="hgi hgi-stroke hgi-user"></i>
-              <textarea name="comment" class="modal-text-area"></textarea>
+              <textarea
+                name="comment"
+                class="modal-text-area"
+                placeholder="Enter text"
+              ></textarea>
             </div>
           </div>
           <div class="modal-checkbox-container">
@@ -352,7 +357,7 @@
               class="modal-checkbox"
               id="accept-checkbox"
             />
-            <label for="accept-checkbox"
+            <label for="accept-checkbox" class="modal-checkbox-label"
               >I accept the terms and conditions of the
               <span>Privacy Policy</span></label
             >
