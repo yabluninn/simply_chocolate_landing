@@ -22,9 +22,9 @@
       </div>
       <nav class="menu">
         <ul class="menu-tabs">
-          <li class="menu-item"><a href="">Home</a></li>
-          <li class="menu-item"><a href="">How it's made?</a></li>
-          <li class="menu-item"><a href="">Chocolate is loved</a></li>
+          <li class="menu-item"><a href="#home">Home</a></li>
+          <li class="menu-item"><a href="#how">How it's made?</a></li>
+          <li class="menu-item"><a href="#reviews">Chocolate is loved</a></li>
         </ul>
         <ul class="social">
           <li class="social-item">
@@ -39,7 +39,7 @@
         <i class="fa-solid fa-bars"></i>
       </button>
     </header>
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="hero-blocks">
         <p class="hero-slogan">
           Treat yourself or a loved one to our finest ingredients for a moment
@@ -197,7 +197,7 @@
         </article>
       </div>
     </section>
-    <section class="how">
+    <section class="how" id="how">
       <p class="section-title">HOW IT’S <span>MADE?</span></p>
       <div class="how-main-info">
         <div class="how-preview-image">.</div>
@@ -229,7 +229,7 @@
         </div>
       </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <p class="section-title"><span>CHOCOLATE</span> IS LOVED</p>
       <div class="reviews-cards">
         <article class="review-item">
@@ -295,9 +295,11 @@
       <div class="footer-container">
         <nav class="footer-menu">
           <ul class="footer-menu-list">
-            <li class="footer-menu-item"><a href="">Home</a></li>
-            <li class="footer-menu-item"><a href="">How it's made?</a></li>
-            <li class="footer-menu-item"><a href="">Chocolate is loved</a></li>
+            <li class="footer-menu-item"><a href="#home">Home</a></li>
+            <li class="footer-menu-item"><a href="#how">How it's made?</a></li>
+            <li class="footer-menu-item">
+              <a href="#reviews">Chocolate is loved</a>
+            </li>
           </ul>
         </nav>
         <div class="footer-subscribe-container">
@@ -310,7 +312,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
+    <div class="modal modal-hidden">
       <div class="modal-container">
         <button class="modal-close-button">
           <i class="fa-solid fa-xmark"></i>
@@ -366,5 +368,6 @@
         <button class="modal-action-button">Send</button>
       </div>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>
